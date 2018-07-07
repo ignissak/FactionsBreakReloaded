@@ -1,5 +1,8 @@
 package cz.ignissak.fbr;
 
+import cz.ignissak.fbr.commands.FactionsBreak;
+import cz.ignissak.fbr.events.EntityExplode;
+import cz.ignissak.fbr.events.PlayerInteract;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -43,10 +46,11 @@ public final class Core extends JavaPlugin {
     }
 
     public void registerEvents() {
-
+        Bukkit.getPluginManager().registerEvents(new EntityExplode(), this);
+        Bukkit.getPluginManager().registerEvents(new PlayerInteract(), this);
     }
 
     public void registerCommands() {
-
+        getCommand("factionsbreak").setExecutor(new FactionsBreak());
     }
 }

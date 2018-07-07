@@ -1,3 +1,9 @@
 name: FactionsBreak
 version: ${project.version}
 main: cz.ignissak.fbr.Core
+authors: [iGniSsak]
+commands:
+  factionsbreak:
+    usage: /<command>
+    alisaes: [fb, factionsb]
+    description: Main command for FactionsBreak
