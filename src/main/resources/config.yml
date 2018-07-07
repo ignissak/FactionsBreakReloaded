@@ -10,3 +10,6 @@ info:
   item: "FEATHER"
   title: "&a&lDurability"
   sub-title: "&f%durablity%"
+messages:
+  no-perm: "&cYou can't do this."
+  reloaded: "&aConfiguration has been reloaded."
