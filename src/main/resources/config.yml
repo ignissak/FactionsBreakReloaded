@@ -9,7 +9,7 @@ on_break_effect: "ENDER_SIGNAL"
 info:
   item: "FEATHER"
   title: "&a&lDurability"
-  sub-title: "&f%durablity%"
+  sub-title: "&f%durability%"
 messages:
   no-perm: "&cYou can't do this."
   reloaded: "&aConfiguration has been reloaded."
