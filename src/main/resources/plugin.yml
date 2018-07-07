@@ -5,5 +5,5 @@ authors: [iGniSsak]
 commands:
   factionsbreak:
     usage: /<command>
-    alisaes: [fb, factionsb]
+    aliases: [fb, factionsb]
     description: Main command for FactionsBreak
