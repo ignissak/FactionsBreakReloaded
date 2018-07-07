@@ -1,0 +1,12 @@
+# FactionsBreakReloaded Configuration (made by iGniSsak)
+tnt:
+  radius: 1
+  ignore_water: true
+durability:
+  obsidian: 5
+  bedrock: 10
+on_break_effect: "ENDER_SIGNAL"
+info:
+  item: "FEATHER"
+  title: "&a&lDurability"
+  sub-title: "&f%durablity%"
