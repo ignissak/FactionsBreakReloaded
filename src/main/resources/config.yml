@@ -2,6 +2,7 @@
 tnt:
   radius: 1
   ignore_water: true
+  ignore_lava: true
 durability:
   obsidian: 5
   bedrock: 10

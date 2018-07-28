@@ -29,6 +29,14 @@ public class EntityExplode implements Listener {
             }
 
         }
+        if (e.getLocation().getBlock().getType().equals(Material.LAVA) || e.getLocation().getBlock().getType().equals(Material.STATIONARY_LAVA)) {
+            if (Core.getInstance().getConfig().getBoolean("tnt.ignore_lava")) {
+                e.getLocation().getBlock().setType(Material.AIR);
+                e.getLocation().getWorld().createExplosion(e.getLocation().getX(), e.getLocation().getY(), e.getLocation().getZ(), 4.0F, false, true);
+                e.getLocation().getBlock().setType(Material.STATIONARY_LAVA);
+            }
+
+        }
         Location ppos = e.getLocation();
         for (int x = r * -1; x <= r; x++) {
             for (int y = r * -1; y <= r; y++) {
